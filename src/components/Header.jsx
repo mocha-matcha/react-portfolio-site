@@ -1,8 +1,9 @@
-import '../colors.css'
 import Navigation from './Navigation';
 const styles = {
     headerStyle: {
-        backgroundColor:'var(--primary)'
+        backgroundColor:'var(--primary)',
+        margin:'0 auto',
+        marginBottom: '50px',
 
     },
     linkStyle: {

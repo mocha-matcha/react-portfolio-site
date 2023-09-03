@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');</style>
       <Header />
       <Outlet/>
       <Footer />

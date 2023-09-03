@@ -1,22 +1,17 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* font-family: 'Roboto', sans-serif; */
+    margin: 0 auto;
+  /* padding: 2rem; */
   text-align: center;
+  /* overflow-x: hidden; */
+  --primary:#4d7451;
+  --secondary:#dd959d;
+  --analogous:#e4f4ea;
+  --analogous-2:#ffff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 @keyframes logo-spin {
   from {
@@ -39,4 +34,52 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.flex,.flex-v
+{
+display: flex;
+margin: 0 auto;
+flex-wrap: wrap;
+justify-content: center ;
+gap: 1vw;
+}
+
+
+.flex-v
+{
+flex-direction: column;
+
+}
+
+
+.flex-child
+{
+background-color: var(--primary);
+
+}
+
+.flex-child > a
+{
+color: var(--analogous);
+
+}
+
+.flex-child > a:visited
+{
+color: var(--analogous);
+
+}
+.flex-child > a:hover
+{
+  color: var(--analogous-2);
+
+  
+}
+
+@media screen and (max-width:500px) {
+  .flex{
+    flex-direction: column;
+  }
 }

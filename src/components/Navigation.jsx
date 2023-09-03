@@ -1,7 +1,7 @@
-import '../colors.css'
 import { Link } from 'react-router-dom';
 const styles = {
     divStyle:{
+        padding:'2vw',
         backgroundColor:'var(--primary)',
     },
     };

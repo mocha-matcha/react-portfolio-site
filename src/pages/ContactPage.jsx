@@ -63,9 +63,9 @@ export default function ContactPage() {
     }
     // name,email.message
 
-    return (<div>
+    return (<div id='contact-form' className="flex-v">
         <h1>Contact!</h1>
-        <form className="form" onSubmit={submitManager}>
+        <form className="flex-v form" onSubmit={submitManager}>
             <input
                 value={userName}
                 name="userName"
@@ -91,9 +91,9 @@ export default function ContactPage() {
 
         </form>
         {errorMessages.length > 1 ? (
-
-                    <button>{errorMessages}</button>
-         
+		<ul className="flex-v">
+			{errorMessages.map(em => ( <button>{em}</button> ))}
+		</ul>
 
    
         ):(<></>) }
