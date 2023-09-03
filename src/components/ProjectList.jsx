@@ -1,10 +1,17 @@
-import getContent from "../getContent";
+// THIS DOES NOT WORK IN CSR! 
+// import getContent from "../getContent";
 import Project from "./Project";
-
+import projectList from "../projectList";
 export default function ProjectList()
 {
+    // console.log(getContent)
 
     return(<>
+    <div className="flex">
+        <ul>
+            {projectList.map((project) => (<Project title={project.title} image={project.image} tagLine={project.tagLine} />))}
+        </ul>
+    </div>
     </>
     );
 }
