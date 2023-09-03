@@ -90,13 +90,13 @@ export default function ContactPage() {
             <button type="submit">Submit</button>
 
         </form>
-        {errorMessages && (
+        {errorMessages.length > 1 ? (
 
                     <button>{errorMessages}</button>
          
 
    
-        )}
+        ):(<></>) }
 
     </div>);
 }

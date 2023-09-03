@@ -9,9 +9,10 @@ const styles = {
 export default function Navigation() {
     return (<>
         <div style={styles.divStyle}>
-        <button><Link key={1} to='/'>Home</Link></button>
-        <button><Link key={2} to='/about'>About</Link></button>
-            <button><Link key={3} to='/contact'>Contact</Link></button>
+        <Link key={1} to='/'><button>Home</button></Link>
+        <Link key={1} to='/projects'><button>Projects</button></Link>
+        <Link key={2} to='/about'><button>About</button></Link>
+            <Link key={3} to='/contact'><button>Contact</button></Link>
         </div>
 
     </>);
