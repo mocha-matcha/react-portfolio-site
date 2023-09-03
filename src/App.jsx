@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import ProjectList from './components/ProjectList'
 
 function App() {
   const [count, setCount] = useState(0)
